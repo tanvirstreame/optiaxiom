@@ -22,6 +22,7 @@ import type { RangeProps, TimeProps } from "@optiaxiom/react/unstable";
 import { Validator } from "@cfworker/json-schema";
 
 import type { ProteusActionProps } from "../proteus-action/ProteusAction";
+import type { ProteusBridgeProps } from "../proteus-bridge/ProteusBridge";
 import type { ProteusCancelActionProps } from "../proteus-action/ProteusCancelAction";
 import type { ProteusChartProps } from "../proteus-chart/ProteusChart";
 import type { ProteusDataTableProps } from "../proteus-data-table/ProteusDataTable";
@@ -39,6 +40,7 @@ export type ProteusElement =
   | (AvatarProps & { $type: "Avatar" })
   | (BadgeProps & { $type: "Badge" })
   | (BoxProps & { $type: "IconCalendar" })
+  | (ProteusBridgeProps & { $type: "Bridge" })
   | (CardHeaderProps & { $type: "CardHeader" })
   | (CardLinkProps & { $type: "CardLink" })
   | (CardProps & { $type: "Card" })
