@@ -116,6 +116,11 @@ export type ProteusEventHandler =
       file: ProteusPreviewFile;
     }
   | {
+      action: "requestModal";
+      params?: Record<string, unknown>;
+      resource: string;
+    }
+  | {
       action: "pushValue";
       path: string;
       value?: unknown;
